@@ -4,7 +4,6 @@ pipeline {
         stage('Submit Stack') {
             steps {
               sh "cat 01_s3cft.yml"
-              echo 'Hello World'
               }
              }
             }
