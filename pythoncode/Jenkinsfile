@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh 'pytest --junit-xml test-reports/results.xml pythoncode/test_calc.py' 
+                sh 'pytest-3 --junit-xml test-reports/results.xml pythoncode/test_calc.py' 
                 sh 'cat test-reports/results.xml'
             }
         }
